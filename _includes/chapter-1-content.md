@@ -319,7 +319,7 @@ Besides the back buffer, we also clear the depth buffer by passing the
 After clearing the buffers, we're free to draw whatever we like onto the
 screen. However, in this example we don't actually draw anything but an empty
 screen. This will change in subsequent chapters where we will actually start
-drawing objects, and all of this drawing will happen after the `glClearColor`
+drawing objects, and all of this drawing will happen after the `glClear`
 line in `RenderFunction`.
 
 <div class="FYI">
@@ -345,8 +345,8 @@ purposes, and buffer A is used as the back buffer for drawing purposes:
   class="center"
 />
 
-After the call to `glutSwapBuffers`, the buffers are swapped and buffer B is
-now the front buffer and buffer A is now the back buffer:
+After the call to `glutSwapBuffers`, the buffers are swapped and buffer A is
+now the front buffer and buffer B is now the back buffer:
 
 <img
   src="{{ site.url }}/images/4262_01_06.png"
